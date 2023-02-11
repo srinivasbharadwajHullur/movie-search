@@ -8,7 +8,7 @@ const MovieSearch = () => {
     const [search, setSearch] = useState('')
     const [movieResult, setMovieResult] = useState([])
     const fetchMovieDetails = async() => {
-        axios.get(`http://www.omdbapi.com/?apikey=eb2021cf&s=${search}&type=movie`)
+        axios.get(`https://www.omdbapi.com/?apikey=eb2021cf&s=${search}&type=movie`)
         .then((response) => {
             if(response.data.Response === "True") {
                 setMovieResult(response.data.Search)
