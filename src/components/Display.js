@@ -1,7 +1,5 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import { useNavigate } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap'
 
 const Display = ({movieResult}) => {

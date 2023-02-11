@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Display from './Display';
 import Form from 'react-bootstrap/Form';
-import { Button } from 'react-bootstrap';
 
 
 const MovieSearch = () => {
