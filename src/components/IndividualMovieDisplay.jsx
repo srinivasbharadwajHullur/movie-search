@@ -13,7 +13,7 @@ const IndividualMovieDisplay = () => {
   const [movieDetails, setMovieDetails] = useState({});
   
   const fetchMovieDetails = async() => {
-    await axios.get(`http://www.omdbapi.com/?apikey=1ff1f629&i=${params.imdb}`)
+    await axios.get(`https://www.omdbapi.com/?apikey=1ff1f629&i=${params.imdb}`)
     .then((response) => {
       setMovieDetails(response.data)
     })

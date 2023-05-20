@@ -14,7 +14,7 @@ const SearchBar = () => {
   const handleMovieSearch = async(e) => {
     e.preventDefault();
     //Call the api
-    await axios.get(`http://www.omdbapi.com/?apikey=1ff1f629&s=${movie}`)
+    await axios.get(`https://www.omdbapi.com/?apikey=1ff1f629&s=${movie}`)
     .then((response) => {
       if (response.data.Response === "True") {
         setMovieDetails(response.data.Search);
